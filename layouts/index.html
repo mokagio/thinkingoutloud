@@ -1,8 +1,19 @@
 {{ define "main" }}
-<h1>{{ .Site.Title }}</h1>
+
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ $paginator := .Paginate $posts }}
+
 <ul>
-{{ range (where .Site.RegularPages "Section" "posts") }}
-<li>{{ .Date.Format "2006-01-02" }} &mdash; <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-{{ end }}
+    {{ range $paginator.Pages }}
+    <li>
+        <a href="{{ .RelPermalink }}">
+            {{- .Title | markdownify }}
+        </a>
+        {{ partial "post_meta.html" . }}
+    </li>
+    {{ end }}
 </ul>
+
+{{ template "_internal/pagination.html" . }}
+
 {{ end }}

@@ -1,10 +1,23 @@
 baseURL = "https://mokagio.github.io/thinkingoutloud/"
 languageCode = "en-us"
 title = "Thinking Out Loud"
-disableKinds = ["taxonomy", "term", "section"]
+theme = "simple-hugo-theme"
+
+[pagination]
+pagerSize = 10
+path = "page"
 
 [markup.goldmark.renderer]
 unsafe = true
 
 [permalinks]
 posts = "/:slug/"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[[menu.main]]
+url = "/posts/"
+name = "blog"
+weight = 1
