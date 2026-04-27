@@ -1,0 +1,10 @@
+baseURL = "https://mokagio.github.io/thinkingoutloud/"
+languageCode = "en-us"
+title = "Thinking Out Loud"
+disableKinds = ["taxonomy", "term", "section"]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[permalinks]
+posts = "/:slug/"
