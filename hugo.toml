@@ -21,3 +21,8 @@ category = "categories"
 url = "/posts/"
 name = "blog"
 weight = 1
+
+[[menu.main]]
+url = "/posts/index.xml"
+name = "rss"
+weight = 2
