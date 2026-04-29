@@ -23,4 +23,4 @@ But what can you sell when you are writing to figure things out yourself?
 
 Luckily, there's this old tech that went out of vogue but that might be ready for a comeback: _RSS_.
 
-Here's {{</* rss "my feed" */>}}.
+Here's {{< rss "my feed" >}}.
