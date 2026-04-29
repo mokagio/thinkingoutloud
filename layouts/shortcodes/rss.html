@@ -1,1 +1,1 @@
-<a href="{{ "/posts/index.xml" | relURL }}">{{ .Get 0 | default "RSS feed" }}</a>
+<a href="{{ "posts/index.xml" | relLangURL }}">{{ .Get 0 | default "RSS feed" }}</a>
