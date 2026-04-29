@@ -1,0 +1,14 @@
+<header>
+    <h1>
+        {{- .Title | markdownify -}}
+    </h1>
+</header>
+<article>
+    {{ .Content }}
+</article>
+{{ $dateFormat := default "Jan 2, 2006" (index .Site.Params "datefmt") }}
+{{- if not .Date.IsZero -}}
+<p class="post-date">
+    <em><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $dateFormat }}</time></em>
+</p>
+{{- end -}}
