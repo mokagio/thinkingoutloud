@@ -1,6 +1,6 @@
 +++
 date = '2026-04-30T09:59:05+10:00'
-draft = true
+draft = false
 title = 'Manga First'
 +++
 
