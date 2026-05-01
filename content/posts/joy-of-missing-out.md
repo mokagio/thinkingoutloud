@@ -1,6 +1,6 @@
 +++
 date = '2026-05-01T09:24:03+10:00'
-draft = true
+draft = false
 title = 'Joy of Missing Out'
 +++
 
