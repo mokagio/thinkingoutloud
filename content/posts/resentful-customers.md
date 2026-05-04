@@ -1,6 +1,6 @@
 +++
 date = '2026-05-03T16:18:00+10:00'
-draft = true
+draft = false
 title = 'Can We Have Tech-Trattorie?'
 +++
 
