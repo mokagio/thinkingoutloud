@@ -1,8 +1,8 @@
-+++
-date = '2026-05-03T16:18:00+10:00'
-draft = false
-title = 'Can We Have Tech-Trattorie?'
-+++
+---
+date: '2026-05-03T16:18:00+10:00'
+draft: false
+title: 'Can We Have Tech-Trattorie?'
+---
 
 _Trattorie_ are a staple of Italian hospitality.
 These little family-owned restaurants, with the dad in the kitchen, the mom at the till, and the daughters waiting at the tables, offer down-to-earth, generous, delicious meals for a reasonable price.

@@ -1,7 +1,7 @@
-+++
-date = '2026-04-28T23:52:01+10:00'
-title = 'Less Email. More RSS'
-+++
+---
+date: '2026-04-28T23:52:01+10:00'
+title: 'Less Email. More RSS'
+---
 
 The mechanics of having an email list are detrimental to my writing and only recently I remembered that a blog does not _need_ an email list.
 

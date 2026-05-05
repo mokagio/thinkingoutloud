@@ -1,8 +1,8 @@
-+++
-date = '2026-04-30T09:59:05+10:00'
-draft = false
-title = 'Manga First'
-+++
+---
+date: '2026-04-30T09:59:05+10:00'
+draft: false
+title: 'Manga First'
+---
 
 I enjoyed the YouTube essay [How Anime Made Superheroes Irrelevant](https://www.youtube.com/watch?v=bMjTUDBOeQk) arguing that Japanese stories in anime are more compelling for audiences than modern Western superheroes.
 
