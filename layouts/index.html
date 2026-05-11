@@ -10,11 +10,11 @@
         <a href="{{ .RelPermalink }}">
             {{- .Title | markdownify -}}
         </a>
+        {{- /* Date intentionally hidden — keep in case we want to restore it later.
         {{- if not .Date.IsZero }}
-        &#x5b;
-        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $dateFormat }}</time>
-        &#x5d;
+        <em><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $dateFormat }}</time></em>
         {{- end }}
+        */ -}}
     </li>
     {{ end }}
 </ul>
