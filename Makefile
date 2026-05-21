@@ -9,7 +9,12 @@ new:
 		exit 1; \
 	fi; \
 	slug=$$(echo "$$words" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd 'a-z0-9-'); \
-	hugo new content/posts/$$slug.md
+	hugo new content/posts/$$slug.md; \
+	if [ -n "$$EDITOR" ]; then \
+		$$EDITOR content/posts/$$slug.md; \
+	else \
+		echo "\$$EDITOR not set; skipping open."; \
+	fi
 
 # Swallow the trailing words so make doesn't complain about missing targets.
 %:
