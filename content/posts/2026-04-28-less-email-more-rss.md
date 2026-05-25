@@ -1,5 +1,6 @@
 ---
 date: '2026-04-28T23:52:01+10:00'
+slug: 'less-email.-more-rss'
 title: 'Less Email. More RSS'
 ---
 
