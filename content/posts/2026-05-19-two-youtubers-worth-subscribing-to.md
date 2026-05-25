@@ -1,6 +1,7 @@
 ---
 date: '2026-05-19T09:10:05+10:00'
 draft: false
+slug: 'two-youtubers-worth-subscribing-to'
 title: 'Two YouTubers Worth Subscribing To'
 ---
 
