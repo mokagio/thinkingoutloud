@@ -1,6 +1,7 @@
 ---
 title: "Why I Am Learning Japanese"
 date: 2026-04-27
+slug: 'why-i-am-learning-japanese'
 ---
 
 Two weeks ago, I started learning Japanese.
