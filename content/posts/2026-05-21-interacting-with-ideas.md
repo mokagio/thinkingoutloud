@@ -1,6 +1,7 @@
 ---
 date: '2026-05-21T10:25:50+10:00'
 draft: false
+slug: 'interacting-with-ideas'
 title: 'Interacting With Ideas'
 ---
 
