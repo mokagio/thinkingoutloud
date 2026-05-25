@@ -1,6 +1,7 @@
 ---
 date: '2026-05-18T15:09:48+10:00'
 draft: false
+slug: 'philosophy-cannot-be-taught'
 title: 'Philosophy Cannot Be Taught'
 ---
 
