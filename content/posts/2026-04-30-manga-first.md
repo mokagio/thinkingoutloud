@@ -1,6 +1,7 @@
 ---
 date: '2026-04-30T09:59:05+10:00'
 draft: false
+slug: 'manga-first'
 title: 'Manga First'
 ---
 
