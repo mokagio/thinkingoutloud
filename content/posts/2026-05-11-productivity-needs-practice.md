@@ -1,6 +1,7 @@
 ---
 date: '2026-05-11T19:49:21+10:00'
 draft: false
+slug: 'productivity-needs-practice'
 title: 'Productivity Needs Practice'
 ---
 
