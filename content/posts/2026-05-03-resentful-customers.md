@@ -1,6 +1,7 @@
 ---
 date: '2026-05-03T16:18:00+10:00'
 draft: false
+slug: 'can-we-have-tech-trattorie'
 title: 'Can We Have Tech-Trattorie?'
 ---
 
