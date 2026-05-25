@@ -1,7 +1,7 @@
 .PHONY: new
 
 # Usage: make new Post Title In Natural Language
-# Creates content/posts/post-title-in-natural-language.md via `hugo new`.
+# Creates content/posts/YYYY-MM-DD-post-title-in-natural-language.md via `hugo new`.
 new:
 	@words="$(wordlist 2,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))"; \
 	if [ -z "$$words" ]; then \
@@ -9,9 +9,10 @@ new:
 		exit 1; \
 	fi; \
 	slug=$$(echo "$$words" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd 'a-z0-9-'); \
-	hugo new content/posts/$$slug.md; \
+	date=$$(date +%Y-%m-%d); \
+	hugo new content/posts/$$date-$$slug.md; \
 	if [ -n "$$EDITOR" ]; then \
-		$$EDITOR content/posts/$$slug.md; \
+		$$EDITOR content/posts/$$date-$$slug.md; \
 	else \
 		echo "\$$EDITOR not set; skipping open."; \
 	fi
