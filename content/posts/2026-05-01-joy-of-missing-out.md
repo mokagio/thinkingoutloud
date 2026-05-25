@@ -1,6 +1,7 @@
 ---
 date: '2026-05-01T09:24:03+10:00'
 draft: false
+slug: 'joy-of-missing-out'
 title: 'Joy of Missing Out'
 ---
 
