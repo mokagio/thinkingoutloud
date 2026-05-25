@@ -10,6 +10,9 @@ path = "page"
 [markup.goldmark.renderer]
 unsafe = true
 
+[markup.goldmark.extensions.typographer]
+disable = false
+
 [permalinks]
 posts = "/:slug/"
 
