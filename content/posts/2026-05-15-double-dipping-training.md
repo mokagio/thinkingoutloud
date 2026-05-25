@@ -1,6 +1,7 @@
 ---
 date: '2026-05-15T08:45:01+10:00'
 draft: false
+slug: 'double-dipping-training'
 title: 'Double Dipping Training'
 ---
 
