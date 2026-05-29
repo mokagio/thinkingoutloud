@@ -1,5 +1,10 @@
 .PHONY: new
 
+# Repeated words in a title (e.g. "The End ... The End") arrive as duplicate
+# command-line goals, and make prints "`The' is up to date." for each repeat.
+# Silent mode suppresses that; recipes below echo explicitly, so real output stays.
+MAKEFLAGS += --silent
+
 # Usage: make new Post Title In Natural Language
 # Creates content/posts/YYYY-MM-DD-post-title-in-natural-language.md via `hugo new`.
 new:
