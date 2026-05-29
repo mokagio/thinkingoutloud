@@ -24,5 +24,5 @@ hugo server -D
 Add new posts with stubbed front matter with
 
 ```
-hugo new content posts/<title>.md
+make new <POST TITLE>
 ```
