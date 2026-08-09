@@ -1,4 +1,11 @@
-Hugo blog. See [`README.md`](README.md) for setup and the new-post command.
+A blog where Gio posts rough ideas, open questions, short remarks.
+As the title suggests, this is a place for _thinking out loud_.
+Therefore, when asked for review, you don't need to remark on the open ended state of posts.
+
+## Tech stack
+
+This is a Hugo blog.
+See [`README.md`](README.md) for setup and the new-post command.
 
 ## Apostrophes and quotes in post source
 
