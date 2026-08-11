@@ -1,0 +1,15 @@
+{{/* Takes a paginator, so the home page and /posts/ render the same list. */}}
+{{ $dateFormat := default "Jan 2, 2006" (index site.Params "datefmt") }}
+
+<ul>
+    {{ range .Pages }}
+    <li>
+        <a href="{{ .RelPermalink }}">
+            {{- .Title | markdownify -}}
+        </a>
+        {{- if not .Date.IsZero }}
+        <em><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $dateFormat }}</time></em>
+        {{- end }}
+    </li>
+    {{ end }}
+</ul>

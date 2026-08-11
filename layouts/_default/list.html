@@ -1,27 +1,11 @@
 {{ define "main" }}
 
-{{ $dateFormat := default "Jan 2, 2006" (index .Site.Params "datefmt") }}
-
 {{/* Display _index.md if available */}}
 {{ if .Content }}
 {{ partial "single" . }}
 {{ end }}
 
-{{/* List all pages */}}
-<ul>
-    {{ range .Paginator.Pages }}
-    <li>
-        <a href="{{ .RelPermalink }}">
-            {{- .Title | markdownify -}}
-        </a>
-        {{- if not .Date.IsZero }}
-        &#x5b;
-        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $dateFormat }}</time>
-        &#x5d;
-        {{- end }}
-    </li>
-    {{ end }}
-</ul>
+{{ partial "post-list" .Paginator }}
 
 {{ template "_internal/pagination.html" . }}
 

@@ -1,23 +1,7 @@
 {{ define "main" }}
 
-{{ $dateFormat := default "Jan 2, 2006" (index .Site.Params "datefmt") }}
 {{ $posts := where .Site.RegularPages "Section" "posts" }}
-{{ $paginator := .Paginate $posts }}
-
-<ul>
-    {{ range $paginator.Pages }}
-    <li>
-        <a href="{{ .RelPermalink }}">
-            {{- .Title | markdownify -}}
-        </a>
-        {{- /* Date intentionally hidden — keep in case we want to restore it later.
-        {{- if not .Date.IsZero }}
-        <em><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $dateFormat }}</time></em>
-        {{- end }}
-        */ -}}
-    </li>
-    {{ end }}
-</ul>
+{{ partial "post-list" (.Paginate $posts) }}
 
 {{ template "_internal/pagination.html" . }}
 
